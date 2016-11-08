@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043841B61DD1A65200CE788F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043841B51DD1A65200CE788F /* MobileCoreServices.framework */; };
+		043841BA1DD1A9EB00CE788F /* WJQSystemPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 043841B91DD1A9EB00CE788F /* WJQSystemPermissionManager.m */; };
+		043841BC1DD1AC4D00CE788F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043841BB1DD1AC4D00CE788F /* AVFoundation.framework */; };
+		043841BE1DD1B22100CE788F /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043841BD1DD1B22100CE788F /* ContactsUI.framework */; };
+		043AA0ED1DD1784800E34121 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AA0EC1DD1784800E34121 /* main.m */; };
+		043AA0F01DD1784800E34121 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AA0EF1DD1784800E34121 /* AppDelegate.m */; };
+		043AA0F31DD1784800E34121 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AA0F21DD1784800E34121 /* ViewController.m */; };
+		043AA0F61DD1784800E34121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043AA0F41DD1784800E34121 /* Main.storyboard */; };
+		043AA0F81DD1784800E34121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043AA0F71DD1784800E34121 /* Assets.xcassets */; };
+		043AA0FB1DD1784800E34121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043AA0F91DD1784800E34121 /* LaunchScreen.storyboard */; };
+		043AA1061DD1784800E34121 /* DemoOfSystemPermissionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AA1051DD1784800E34121 /* DemoOfSystemPermissionsTests.m */; };
+		043AA1111DD1784800E34121 /* DemoOfSystemPermissionsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AA1101DD1784800E34121 /* DemoOfSystemPermissionsUITests.m */; };
+		A9018CA07CB4FAF5BFA04619 /* libPods-DemoOfSystemPermissions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C985C7CD83666A3BFBD46279 /* libPods-DemoOfSystemPermissions.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		043AA1021DD1784800E34121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043AA0E01DD1784800E34121 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043AA0E71DD1784800E34121;
+			remoteInfo = DemoOfSystemPermissions;
+		};
+		043AA10D1DD1784800E34121 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 043AA0E01DD1784800E34121 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 043AA0E71DD1784800E34121;
+			remoteInfo = DemoOfSystemPermissions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043841B51DD1A65200CE788F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		043841B81DD1A9EB00CE788F /* WJQSystemPermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJQSystemPermissionManager.h; sourceTree = "<group>"; };
+		043841B91DD1A9EB00CE788F /* WJQSystemPermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJQSystemPermissionManager.m; sourceTree = "<group>"; };
+		043841BB1DD1AC4D00CE788F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		043841BD1DD1B22100CE788F /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		043AA0E81DD1784800E34121 /* DemoOfSystemPermissions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoOfSystemPermissions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043AA0EC1DD1784800E34121 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		043AA0EE1DD1784800E34121 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		043AA0EF1DD1784800E34121 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		043AA0F11DD1784800E34121 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		043AA0F21DD1784800E34121 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		043AA0F51DD1784800E34121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		043AA0F71DD1784800E34121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043AA0FA1DD1784800E34121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043AA0FC1DD1784800E34121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043AA1011DD1784800E34121 /* DemoOfSystemPermissionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoOfSystemPermissionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043AA1051DD1784800E34121 /* DemoOfSystemPermissionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoOfSystemPermissionsTests.m; sourceTree = "<group>"; };
+		043AA1071DD1784800E34121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043AA10C1DD1784800E34121 /* DemoOfSystemPermissionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoOfSystemPermissionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		043AA1101DD1784800E34121 /* DemoOfSystemPermissionsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoOfSystemPermissionsUITests.m; sourceTree = "<group>"; };
+		043AA1121DD1784800E34121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043AA11E1DD17A0F00E34121 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1BC3F32346960D3F14A59ED3 /* Pods-DemoOfSystemPermissions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoOfSystemPermissions.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoOfSystemPermissions/Pods-DemoOfSystemPermissions.release.xcconfig"; sourceTree = "<group>"; };
+		B159DFEEC2B996FE1C2A67E8 /* Pods-DemoOfSystemPermissions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoOfSystemPermissions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoOfSystemPermissions/Pods-DemoOfSystemPermissions.debug.xcconfig"; sourceTree = "<group>"; };
+		C985C7CD83666A3BFBD46279 /* libPods-DemoOfSystemPermissions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoOfSystemPermissions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043AA0E51DD1784800E34121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043841BE1DD1B22100CE788F /* ContactsUI.framework in Frameworks */,
+				043841BC1DD1AC4D00CE788F /* AVFoundation.framework in Frameworks */,
+				043841B61DD1A65200CE788F /* MobileCoreServices.framework in Frameworks */,
+				A9018CA07CB4FAF5BFA04619 /* libPods-DemoOfSystemPermissions.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043AA0FE1DD1784800E34121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043AA1091DD1784800E34121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043841B71DD1A9C700CE788F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				043841B81DD1A9EB00CE788F /* WJQSystemPermissionManager.h */,
+				043841B91DD1A9EB00CE788F /* WJQSystemPermissionManager.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		043AA0DF1DD1784800E34121 = {
+			isa = PBXGroup;
+			children = (
+				043AA0EA1DD1784800E34121 /* DemoOfSystemPermissions */,
+				043AA1041DD1784800E34121 /* DemoOfSystemPermissionsTests */,
+				043AA10F1DD1784800E34121 /* DemoOfSystemPermissionsUITests */,
+				043AA0E91DD1784800E34121 /* Products */,
+				7487E2AED3E5953ABB5DB432 /* Pods */,
+				A78970F0FE4CC874B935E50B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		043AA0E91DD1784800E34121 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043AA0E81DD1784800E34121 /* DemoOfSystemPermissions.app */,
+				043AA1011DD1784800E34121 /* DemoOfSystemPermissionsTests.xctest */,
+				043AA10C1DD1784800E34121 /* DemoOfSystemPermissionsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043AA0EA1DD1784800E34121 /* DemoOfSystemPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				043841B71DD1A9C700CE788F /* Class */,
+				043AA0EE1DD1784800E34121 /* AppDelegate.h */,
+				043AA0EF1DD1784800E34121 /* AppDelegate.m */,
+				043AA0F11DD1784800E34121 /* ViewController.h */,
+				043AA0F21DD1784800E34121 /* ViewController.m */,
+				043AA0F41DD1784800E34121 /* Main.storyboard */,
+				043AA0F71DD1784800E34121 /* Assets.xcassets */,
+				043AA0F91DD1784800E34121 /* LaunchScreen.storyboard */,
+				043AA0FC1DD1784800E34121 /* Info.plist */,
+				043AA0EB1DD1784800E34121 /* Supporting Files */,
+			);
+			path = DemoOfSystemPermissions;
+			sourceTree = "<group>";
+		};
+		043AA0EB1DD1784800E34121 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				043AA0EC1DD1784800E34121 /* main.m */,
+				043AA11E1DD17A0F00E34121 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		043AA1041DD1784800E34121 /* DemoOfSystemPermissionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				043AA1051DD1784800E34121 /* DemoOfSystemPermissionsTests.m */,
+				043AA1071DD1784800E34121 /* Info.plist */,
+			);
+			path = DemoOfSystemPermissionsTests;
+			sourceTree = "<group>";
+		};
+		043AA10F1DD1784800E34121 /* DemoOfSystemPermissionsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				043AA1101DD1784800E34121 /* DemoOfSystemPermissionsUITests.m */,
+				043AA1121DD1784800E34121 /* Info.plist */,
+			);
+			path = DemoOfSystemPermissionsUITests;
+			sourceTree = "<group>";
+		};
+		7487E2AED3E5953ABB5DB432 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B159DFEEC2B996FE1C2A67E8 /* Pods-DemoOfSystemPermissions.debug.xcconfig */,
+				1BC3F32346960D3F14A59ED3 /* Pods-DemoOfSystemPermissions.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A78970F0FE4CC874B935E50B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				043841BD1DD1B22100CE788F /* ContactsUI.framework */,
+				043841BB1DD1AC4D00CE788F /* AVFoundation.framework */,
+				043841B51DD1A65200CE788F /* MobileCoreServices.framework */,
+				C985C7CD83666A3BFBD46279 /* libPods-DemoOfSystemPermissions.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043AA0E71DD1784800E34121 /* DemoOfSystemPermissions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043AA1151DD1784800E34121 /* Build configuration list for PBXNativeTarget "DemoOfSystemPermissions" */;
+			buildPhases = (
+				10717E81F9C3047184DE8247 /* [CP] Check Pods Manifest.lock */,
+				043AA0E41DD1784800E34121 /* Sources */,
+				043AA0E51DD1784800E34121 /* Frameworks */,
+				043AA0E61DD1784800E34121 /* Resources */,
+				E542A346FB2C269214443CAC /* [CP] Embed Pods Frameworks */,
+				5A234D787586476FFCA1C186 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoOfSystemPermissions;
+			productName = DemoOfSystemPermissions;
+			productReference = 043AA0E81DD1784800E34121 /* DemoOfSystemPermissions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		043AA1001DD1784800E34121 /* DemoOfSystemPermissionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043AA1181DD1784800E34121 /* Build configuration list for PBXNativeTarget "DemoOfSystemPermissionsTests" */;
+			buildPhases = (
+				043AA0FD1DD1784800E34121 /* Sources */,
+				043AA0FE1DD1784800E34121 /* Frameworks */,
+				043AA0FF1DD1784800E34121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043AA1031DD1784800E34121 /* PBXTargetDependency */,
+			);
+			name = DemoOfSystemPermissionsTests;
+			productName = DemoOfSystemPermissionsTests;
+			productReference = 043AA1011DD1784800E34121 /* DemoOfSystemPermissionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		043AA10B1DD1784800E34121 /* DemoOfSystemPermissionsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043AA11B1DD1784800E34121 /* Build configuration list for PBXNativeTarget "DemoOfSystemPermissionsUITests" */;
+			buildPhases = (
+				043AA1081DD1784800E34121 /* Sources */,
+				043AA1091DD1784800E34121 /* Frameworks */,
+				043AA10A1DD1784800E34121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				043AA10E1DD1784800E34121 /* PBXTargetDependency */,
+			);
+			name = DemoOfSystemPermissionsUITests;
+			productName = DemoOfSystemPermissionsUITests;
+			productReference = 043AA10C1DD1784800E34121 /* DemoOfSystemPermissionsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043AA0E01DD1784800E34121 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = JackWu;
+				TargetAttributes = {
+					043AA0E71DD1784800E34121 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+					043AA1001DD1784800E34121 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 924CDEM7G8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 043AA0E71DD1784800E34121;
+					};
+					043AA10B1DD1784800E34121 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 924CDEM7G8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 043AA0E71DD1784800E34121;
+					};
+				};
+			};
+			buildConfigurationList = 043AA0E31DD1784800E34121 /* Build configuration list for PBXProject "DemoOfSystemPermissions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043AA0DF1DD1784800E34121;
+			productRefGroup = 043AA0E91DD1784800E34121 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043AA0E71DD1784800E34121 /* DemoOfSystemPermissions */,
+				043AA1001DD1784800E34121 /* DemoOfSystemPermissionsTests */,
+				043AA10B1DD1784800E34121 /* DemoOfSystemPermissionsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043AA0E61DD1784800E34121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043AA0FB1DD1784800E34121 /* LaunchScreen.storyboard in Resources */,
+				043AA0F81DD1784800E34121 /* Assets.xcassets in Resources */,
+				043AA0F61DD1784800E34121 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043AA0FF1DD1784800E34121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043AA10A1DD1784800E34121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10717E81F9C3047184DE8247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A234D787586476FFCA1C186 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoOfSystemPermissions/Pods-DemoOfSystemPermissions-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E542A346FB2C269214443CAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoOfSystemPermissions/Pods-DemoOfSystemPermissions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043AA0E41DD1784800E34121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043AA0F31DD1784800E34121 /* ViewController.m in Sources */,
+				043AA0F01DD1784800E34121 /* AppDelegate.m in Sources */,
+				043841BA1DD1A9EB00CE788F /* WJQSystemPermissionManager.m in Sources */,
+				043AA0ED1DD1784800E34121 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043AA0FD1DD1784800E34121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043AA1061DD1784800E34121 /* DemoOfSystemPermissionsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		043AA1081DD1784800E34121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043AA1111DD1784800E34121 /* DemoOfSystemPermissionsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		043AA1031DD1784800E34121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043AA0E71DD1784800E34121 /* DemoOfSystemPermissions */;
+			targetProxy = 043AA1021DD1784800E34121 /* PBXContainerItemProxy */;
+		};
+		043AA10E1DD1784800E34121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 043AA0E71DD1784800E34121 /* DemoOfSystemPermissions */;
+			targetProxy = 043AA10D1DD1784800E34121 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		043AA0F41DD1784800E34121 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043AA0F51DD1784800E34121 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		043AA0F91DD1784800E34121 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043AA0FA1DD1784800E34121 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043AA1131DD1784800E34121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		043AA1141DD1784800E34121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		043AA1161DD1784800E34121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B159DFEEC2B996FE1C2A67E8 /* Pods-DemoOfSystemPermissions.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: QingYu Deng (G5RZN9D795)";
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DemoOfSystemPermissions/PrefixHeader.pch;
+				INFOPLIST_FILE = DemoOfSystemPermissions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaocang.systemperssions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9392dcf2-c7ea-4d37-a472-00d2dc740bb8";
+				PROVISIONING_PROFILE_SPECIFIER = DevOfDemo;
+			};
+			name = Debug;
+		};
+		043AA1171DD1784800E34121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BC3F32346960D3F14A59ED3 /* Pods-DemoOfSystemPermissions.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: QingYu Deng (G5RZN9D795)";
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DemoOfSystemPermissions/PrefixHeader.pch;
+				INFOPLIST_FILE = DemoOfSystemPermissions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaocang.systemperssions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9392dcf2-c7ea-4d37-a472-00d2dc740bb8";
+				PROVISIONING_PROFILE_SPECIFIER = DevOfDemo;
+			};
+			name = Release;
+		};
+		043AA1191DD1784800E34121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 924CDEM7G8;
+				INFOPLIST_FILE = DemoOfSystemPermissionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RongZhu.DemoOfSystemPermissionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoOfSystemPermissions.app/DemoOfSystemPermissions";
+			};
+			name = Debug;
+		};
+		043AA11A1DD1784800E34121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 924CDEM7G8;
+				INFOPLIST_FILE = DemoOfSystemPermissionsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RongZhu.DemoOfSystemPermissionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoOfSystemPermissions.app/DemoOfSystemPermissions";
+			};
+			name = Release;
+		};
+		043AA11C1DD1784800E34121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 924CDEM7G8;
+				INFOPLIST_FILE = DemoOfSystemPermissionsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RongZhu.DemoOfSystemPermissionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DemoOfSystemPermissions;
+			};
+			name = Debug;
+		};
+		043AA11D1DD1784800E34121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 924CDEM7G8;
+				INFOPLIST_FILE = DemoOfSystemPermissionsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RongZhu.DemoOfSystemPermissionsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DemoOfSystemPermissions;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043AA0E31DD1784800E34121 /* Build configuration list for PBXProject "DemoOfSystemPermissions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043AA1131DD1784800E34121 /* Debug */,
+				043AA1141DD1784800E34121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043AA1151DD1784800E34121 /* Build configuration list for PBXNativeTarget "DemoOfSystemPermissions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043AA1161DD1784800E34121 /* Debug */,
+				043AA1171DD1784800E34121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043AA1181DD1784800E34121 /* Build configuration list for PBXNativeTarget "DemoOfSystemPermissionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043AA1191DD1784800E34121 /* Debug */,
+				043AA11A1DD1784800E34121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043AA11B1DD1784800E34121 /* Build configuration list for PBXNativeTarget "DemoOfSystemPermissionsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043AA11C1DD1784800E34121 /* Debug */,
+				043AA11D1DD1784800E34121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043AA0E01DD1784800E34121 /* Project object */;
+}
